@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<block>
+  <name>sliding_window_min_ff</name>
+  <key>kicksat2gs_sliding_window_min_ff</key>
+  <category>[kicksat2gs]</category>
+  <import>import kicksat2gs</import>
+  <make>kicksat2gs.sliding_window_min_ff($length)</make>
+  <!-- Make one 'param' node for every Parameter you want settable from the GUI.
+       Sub-nodes:
+       * name
+       * key (makes the value accessible as $keyname, e.g. in the make node)
+       * type -->
+  <param>
+    <name>length</name>
+    <key>length</key>
+    <type>int</type>
+  </param>
+
+  <!-- Make one 'sink' node per input. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+
+  <!-- Make one 'source' node per output. Sub-nodes:
+       * name (an identifier for the GUI)
+       * type
+       * vlen
+       * optional (set to 1 for optional inputs) -->
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
