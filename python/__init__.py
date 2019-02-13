@@ -31,6 +31,6 @@ except ImportError:
 	pass
 
 # import any pure python here
-from sliding_window_max_ff import sliding_window_max_ff
-from sliding_window_min_ff import sliding_window_min_ff
+
+
 #

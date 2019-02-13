@@ -32,8 +32,7 @@ endif()
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    sliding_window_max_ff.py
-    sliding_window_min_ff.py DESTINATION ${GR_PYTHON_DIR}/kicksat2gs
+    DESTINATION ${GR_PYTHON_DIR}/kicksat2gs
 )
 
 ########################################################################

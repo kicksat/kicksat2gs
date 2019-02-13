@@ -23,5 +23,6 @@
 ########################################################################
 install(FILES
     api.h
+    moving_max_ff.h
     DESTINATION include/kicksat2gs
 )

@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <block>
-  <name>sliding_window_min_ff</name>
-  <key>kicksat2gs_sliding_window_min_ff</key>
+  <name>moving_max_ff</name>
+  <key>kicksat2gs_moving_max_ff</key>
   <category>[kicksat2gs]</category>
   <import>import kicksat2gs</import>
-  <make>kicksat2gs.sliding_window_min_ff($length)</make>
+  <make>kicksat2gs.moving_max_ff($length)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
        * type -->
   <param>
-    <name>length</name>
+    <name>Length</name>
     <key>length</key>
     <type>int</type>
   </param>

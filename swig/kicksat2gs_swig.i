@@ -8,6 +8,10 @@
 %include "kicksat2gs_swig_doc.i"
 
 %{
+#include "kicksat2gs/moving_max_ff.h"
 %}
 
+
+%include "kicksat2gs/moving_max_ff.h"
+GR_SWIG_BLOCK_MAGIC2(kicksat2gs, moving_max_ff);
 
